@@ -1,0 +1,59 @@
+
+
+<StimulationSet>
+
+<!--onset and duration in ms, rate in particles/ms-->
+
+<InjectionStim specieID="Ca" injectionSite="pointA">
+        <onset>               201000          </onset>
+        <duration>        10         </duration> 
+        <rate>             95000       </rate>
+</InjectionStim>
+
+<InjectionStim specieID="Ca" injectionSite="pointA">
+        <onset>               201020          </onset>
+        <duration>        10         </duration> 
+        <rate>             11000       </rate>
+	<period>        300         </period>
+	<end>        202000        </end>
+</InjectionStim>
+
+<InjectionStim specieID="Ca" injectionSite="pointA">
+        <onset>               202300          </onset>
+        <duration>        10         </duration> 
+        <rate>             8100       </rate>
+	<period>        500         </period>
+	<end>        211000        </end>
+</InjectionStim>
+
+<InjectionStim specieID="Ca" injectionSite="pointA">
+        <onset>               211500          </onset>
+        <duration>        10         </duration> 
+        <rate>             3090       </rate>
+	<period>        500         </period>
+	<end>        231000        </end>
+</InjectionStim>
+
+<InjectionStim specieID="Ca" injectionSite="pointA">
+        <onset>               231500          </onset>
+        <duration>        10         </duration> 
+        <rate>             2890       </rate>
+	<period>        600         </period>
+	<end>        261000        </end>
+</InjectionStim>
+
+<InjectionStim specieID="Cbuff" injectionSite="pointA">
+
+        <onset>               231000          </onset>
+        <duration>        5         </duration> 
+      	<rate>       250000 </rate>
+   </InjectionStim>
+
+   <InjectionStim specieID="Cbuffslow" injectionSite="pointA">
+
+    <onset>               201000          </onset>
+        <duration>        30000        </duration> 
+	<rate>   100           </rate>
+   </InjectionStim>
+ 
+</StimulationSet>

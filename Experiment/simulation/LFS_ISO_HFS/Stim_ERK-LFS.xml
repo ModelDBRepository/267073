@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StimulationSet>
+
+  <!-- the injectionSite must match a regionLabel deefined in the morphology -->
+  
+
+  <InjectionStim specieID="Ca" injectionSite="pointA">
+    <onset>100000</onset>
+    <duration>3</duration>
+    <rate>100</rate>
+    <period>200</period>
+    <end>101000</end> 
+    
+  </InjectionStim>
+
+  <InjectionStim specieID="Ca" injectionSite="pointA">
+    <onset>101000</onset>
+    <duration>3</duration>
+    <rate>50</rate>
+    <period>200</period>
+    <end>280000</end> 
+    
+  </InjectionStim>
+  <!--cAMP -->
+  
+  <InjectionStim specieID="cAMP" injectionSite="pointA">
+    <onset>               101020          </onset>
+    <duration>       10        </duration> 
+    <rate>             5       </rate>
+    <period>        50             </period>
+    <end>        280000           </end>
+  </InjectionStim>
+</StimulationSet>

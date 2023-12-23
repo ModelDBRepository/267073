@@ -1,0 +1,33 @@
+<StimulationSet>
+  <!--GBG-->
+<InjectionStim specieID="Gbg" injectionSite="pointA">
+        <onset>               201000     </onset>
+        <duration>            10      </duration> 
+        <rate>                156     </rate>
+</InjectionStim>
+
+<InjectionStim specieID="Gbg" injectionSite="pointA">
+        <onset>               201010         </onset>
+        <duration>            990       </duration> 
+        <rate>               1.5        </rate>
+</InjectionStim>
+
+<!--cAMP-->
+<InjectionStim specieID="cAMP" injectionSite="pointA">
+        <onset>               201000          </onset>
+        <duration>        1         </duration> 
+       	<rate>               7500      </rate>
+ </InjectionStim>
+
+ <InjectionStim specieID="cAMP" injectionSite="pointA">
+        <onset>               201010          </onset>
+        <duration>       1        </duration> 
+       	<rate>              70       </rate>
+	<period>        10             </period>
+	<end>          202000           </end>
+</InjectionStim>
+  
+</StimulationSet>
+
+
+      

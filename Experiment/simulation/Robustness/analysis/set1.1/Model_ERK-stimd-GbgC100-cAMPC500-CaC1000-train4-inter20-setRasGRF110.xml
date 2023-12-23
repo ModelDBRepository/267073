@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SDRun xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://stochdiff.textensor.org">
+    <!-- this file defines a single run of the calculation, using morphology and 
+	 reaction data brought in from other files --> 
+
+          <xi:include href="../../../Rxn_ERK-d.xml" />
+          <xi:include href="../../../Morph.xml" />        
+          <xi:include href="IC_ERK_basald-setRasGRF1.1.xml" />
+          <xi:include href="../../../Out_ERK.xml" />
+	   <xi:include href="../../Stim_ERK_GbgC100-cAMPC500-CaC1000-train4-inter20.xml" />
+ 
+ 
+    <!--2D means the morphology is interpreted like a flatworm, 3D for
+	roundworms. The 2D case is good for testing as it is easy to visualize the
+results. depth 2D units are microns  -->
+    <geometry>          2D           </geometry>
+    <depth2D>           0.40          </depth2D>
+    <distribution>      BINOMIAL     </distribution>
+    <algorithm>         INDEPENDENT  </algorithm>
+    <simulationSeed>    123       </simulationSeed>
+
+
+    <!-- run time for the calculation, milliseconds -->
+    <runtime>          3600000      </runtime>
+
+    <!-- set the seed to get the same spines each time testing -->
+    <spineSeed>          123          </spineSeed>
+
+    <discretization>
+	<!-- default largest size for elements in bulk volumes (dendrites), microns -->	
+       <defaultMaxElementSide>8</defaultMaxElementSide> 
+        
+    <!-- surfaceLayers> 0.1 </surfaceLayers -->
+    </discretization>
+
+    <outputInterval>      2000.0   </outputInterval>
+
+    <!-- the tolerace is used for adaptive sims -->
+    <tolerance>           0.01       </tolerance>
+    <!-- calculation types include
+	 GRID_STEPPED_STOCHASTIC (old fixedStep tau-leap),
+	 GRID_STEPPED_CONTINUOUS (deterministic), and
+	 GRID_ADAPTIVE (new adaptive (asynchronous tau-leap).-->
+    <calculation>GRID_ADAPTIVE</calculation>
+</SDRun>

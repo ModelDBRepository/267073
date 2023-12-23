@@ -1,0 +1,89 @@
+<StimulationSet>
+
+  <!--onset and duration in ms, rate in particles/ms-->
+
+    
+
+ <!--cAMP -->
+
+<!--fast injection to have sharp increase-->
+<InjectionStim specieID="cAMP" injectionSite="pointA">
+           <onset>               201000          </onset>
+        <duration>        10         </duration> 
+       	<rate>               1000      </rate>
+   
+   	<period>        1100             </period>
+	<end>          202000           </end>
+		
+</InjectionStim>
+
+
+<!--maintained desire concentration-->
+
+
+ <InjectionStim specieID="cAMP" injectionSite="pointA">
+        <onset>               201020          </onset>
+        <duration>       10        </duration> 
+       	<rate>              40       </rate>
+	<period>        40             </period>
+	<end>          202000           </end>
+</InjectionStim>
+
+
+ <!--Ca -->
+
+
+  
+<!--fast injection to have sharp increase-->
+<InjectionStim specieID="Ca" injectionSite="pointA">
+  
+        <onset>               201000          </onset>
+        <duration>        10         </duration> 
+        <rate>             180000       </rate>
+   
+	<period>        1100             </period>
+	<end>          202000           </end>
+   
+   
+	
+</InjectionStim>
+
+<!--maintained desire concentration-->
+<InjectionStim specieID="Ca" injectionSite="pointA">
+  
+        <onset>               201020          </onset>
+        <duration>        10         </duration> 
+        <rate>            20000       </rate>
+	<period>        320         </period>
+	<end>        202000        </end>
+   
+	
+</InjectionStim>
+
+<!--buff to bring back Ca to basal. repeated -->
+<InjectionStim specieID="Cbuff" injectionSite="pointA">
+
+        <onset>               202000          </onset>
+        <duration>        5         </duration> 
+      	<rate>       450000 </rate>
+	<period>        1000             </period>
+	<end>          203000           </end>
+   
+</InjectionStim>
+
+
+
+<!--slow buff for external Ca, keep basal -->   
+   <InjectionStim specieID="Cbuffslow" injectionSite="pointA">
+
+        <onset>               201000          </onset>
+        <duration>        1000        </duration> 
+	<rate>   600           </rate>
+	<period>        1100             </period>
+	<end>          202000           </end>
+   </InjectionStim>
+
+
+
+
+</StimulationSet>

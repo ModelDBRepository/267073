@@ -1,0 +1,65 @@
+<StimulationSet>
+  <!--GBG-->
+<InjectionStim specieID="Gbg" injectionSite="pointA">
+        <onset>               201000     </onset>
+        <duration>            10      </duration> 
+        <rate>                156     </rate>
+</InjectionStim>
+
+<InjectionStim specieID="Gbg" injectionSite="pointA">
+        <onset>               201010         </onset>
+        <duration>            990       </duration> 
+        <rate>               1.5        </rate>
+</InjectionStim>
+
+<!--calcium-->
+<!--onset and duration in ms, rate in particles/ms-->
+
+<InjectionStim specieID="Ca" injectionSite="pointA">
+        <onset>               201000          </onset>
+        <duration>        10         </duration> 
+        <rate>             95000       </rate>
+   </InjectionStim>
+
+<InjectionStim specieID="Ca" injectionSite="pointA">
+        <onset>               201020          </onset>
+        <duration>        10         </duration> 
+        <rate>             11000      </rate>
+	<period>        300         </period>
+	<end>        202000        </end>
+</InjectionStim>
+
+<InjectionStim specieID="Cbuff" injectionSite="pointA">
+
+        <onset>               202000          </onset>
+        <duration>       5          </duration> 
+      	<rate>    250000 </rate>
+   </InjectionStim>
+   
+   <InjectionStim specieID="Cbuffslow" injectionSite="pointA">
+
+    <onset>               201000          </onset>
+        <duration>        1000        </duration> 
+	<rate>   350       </rate>
+   </InjectionStim>
+	
+<!--cAMP-->
+<InjectionStim specieID="cAMP" injectionSite="pointA">
+        <onset>               201000          </onset>
+        <duration>        1         </duration> 
+       	<rate>               7500      </rate>
+   </InjectionStim>
+
+ <InjectionStim specieID="cAMP" injectionSite="pointA">
+        <onset>               201010          </onset>
+        <duration>       1        </duration> 
+       	<rate>              70       </rate>
+	<period>        10             </period>
+	<end>          202000           </end>
+</InjectionStim>
+
+   
+</StimulationSet>
+
+
+      

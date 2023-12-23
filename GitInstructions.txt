@@ -1,0 +1,86 @@
+1. Create account on github
+2. Install git (if not already installed)
+3. git clone https://github.com/neurord/D1pathways
+4. Normal git stuff
+5. Give me your github user name (to allow you to push)
+
+NORMAL GIT STUFF
+
+Now, you can edit stuff.  Then
+MAIN GIT COMMANDS
+git status - tells you whether there are changes either staged for commit, or modified but not staged
+git diff - use to verify or review your changes
+git add - if a new file is created (instead of just editing existing files)
+    can also be used to move an edited file to the staging area
+git commit -a - use to stage and then commit changes (ready to upload)
+    you will need to add a one line description of your change, and optionally a longer description
+git push - upload your  changes and merge them with the existing version
+
+git pull - to see changes to repository made by others
+
+ADDITIONAL GIT COMMANDS 
+git commit specific_file_names - to avoid committing all files
+git rm filename - to stage removing file from repository, needs to be followed by git commit
+
+git log - to see the history of changes made to my local copy
+git checkout filename - to pull just a single file from the repository
+git reset --hard  - roll back to previous version of everything not committed.
+ggit reset filename - just unstage one file
+gitk& - a nice visual tool, sort of like eclipse, to show you the  various changes
+
+###############
+Branching
+git branch name -> to create a branch
+you have to do something else for it to push to the repository
+
+git branch -r -> to show remote branches (only on your computer
+git branch -a -> to show both remote and local
+
+git show branchname:filename -> to show the filename
+git show branchname:filename > filenm will create a local copy, then you can copy stuff to a different branch
+git checkout branchname --filename will overout/replace filename - easier, but less safe if you only want some things updatedg
+git merge branchname - will replace all files from branch into your master branch - more automatic, but more dangerous.  best to commit or stash your changes first
+
+then, to swich between branches (say you want to work on different branches0
+git checkout otherbranch
+
+now, you can make changes, commit, push them, then
+
+git checkout master
+this switches you back
+
+BETTER WAY TO UPDATE MULTIPLE BRANCHES
+after editing a branch, e.g. master, do the usual:
+git  commit
+git push
+THEN
+git checkout otherbranch (e.g. plasticity-rule)
+THEN
+git cherry-pick master -x
+
+this will copy the files from the last master commit only and merge into plasticity-rule (other branch)
+i.e. cherry-pick branch means take last commit from branch (that you are not working on) and merge into the branch you are working on
+###############
+
+If you've made local changes, and forgot to pull first, then
+git commit
+git pull
+git push
+
+or
+git stash
+git pull
+git stash apply or git pop
+git stash drop - clears the last stash
+
+wget url to download just a single file
+
+
+##############################
+git commit file
+press enter
+write msg
+press esc
+:
+type wq
+press enter

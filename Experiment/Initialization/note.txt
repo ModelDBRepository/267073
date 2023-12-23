@@ -1,0 +1,22 @@
+Final version of the Model
+
+1. Raf dimerization needed to be fully actif 
+ C-Raf is only actif when it is homodimerized
+
+2. Rates for RasGRF
+Dr. Feig mentioned that Sos and RasGRF have similar affinity
+So we use Sos affinit for Ras: a thenth of all rates and kept Km the same
+
+3.Troubleshoot for Ca 
+ _added different type of buffer such as pump, nxca, fixed buffer (CB)
+ _20X lower rates for CB because it was too fast and slowing simulation. Plus lower rate do not affect our result
+ _two type of calcium, internal and external Ca exchange through leak
+ _add a pool of NgCam in order to have available Cam for RasGRF
+ Increase Pump and Leak to have calcium come down within 2sec and match data (cormier et al 2001) 
+
+
+4.Troubleshoot for cAMP
+ _Production of cAMP to mimic AC production (only product  of cAMP, no reactant)
+ _PDE2 and PDE4, true buffers to maintain the basal level of cAMP 
+
+

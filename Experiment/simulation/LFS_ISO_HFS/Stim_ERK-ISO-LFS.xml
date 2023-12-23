@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StimulationSet>
+
+    <!-- the injectionSite must match a regionLabel deefined in the morphology -->
+   
+
+<!-- Train I -->
+
+
+
+<!-- Train I -->
+
+<!-- Train I -->
+<InjectionStim specieID="cAMP" injectionSite="pointA">
+        <onset>               101020          </onset>
+        <duration>       10        </duration> 
+       	<rate>              3.5       </rate>
+	<period>        40             </period>
+	<end>         402000           </end>
+</InjectionStim>
+ <!--fast injection to have sharp increase-->
+<InjectionStim specieID="cAMP" injectionSite="pointA">
+  <onset>               401000          </onset>
+        <duration>        10         </duration> 
+       	<rate>               750      </rate>
+   
+   	<period>        1100             </period>
+	<end>          682000           </end>
+	
+</InjectionStim>
+<InjectionStim specieID="Ca" injectionSite="pointA">
+        <onset>400000</onset>
+	<duration>3</duration>
+	<rate>200</rate>
+        <period>200</period>
+        <end>580000</end> 
+       
+</InjectionStim>
+
+<InjectionStim specieID="Gbg" injectionSite="pointA">
+        <onset>               250000         </onset>
+        <duration>            150000       </duration> 
+        <rate>               0.2        </rate>
+	<end>          1800000           </end>
+</InjectionStim>
+</StimulationSet>
